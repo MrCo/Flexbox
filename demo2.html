@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8"/>
+      <title>Flexbox Demo2</title>
+      <style type='text/css'>
+          .flex{
+              display: flex;
+              width: 600px;
+              background: yellow;
+          }
+      </style>
+  </head>
+  <body>
+      <div style=" display:flex; flex-direction:column; ">
+        <div class="flex">
+            <div class="item" style='flex:1; background:red; order:3;'>one</div>
+            <div class="item" style='flex:1; background:blue; order:2;'>two</div>
+            <div class="item" style='flex:1 0 100px; order:1;'>there</div>
+        </div>
+
+        <br>
+
+        <div class="flex">
+            <div class="item" style='flex:1 0 200px; background:red; order:3;'>one</div>
+            <div class="item" style='flex:1 0 100px; order:1;'>there</div>
+        </div>
+      </div>
+  </body>
+</html>
