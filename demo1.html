@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8"/>
+      <title>Flexbox</title>
+      <style type='text/css'>
+          body{
+              background:#000;
+          }
+          .flex{
+              display: flex;
+          }
+          .box{
+              float:left;
+              display: flex;                            
+              width: 100px;
+              height: 100px;
+              border-radius: 5px 5px;
+              margin:20px;
+              background: #fff;
+              box-shadow: inset 0px 0px 8px #000;
+          }
+          .item{
+              width: 20px;
+              height: 20px;
+              background:#000;
+              border-radius: 10px 10px;
+          }
+          .item.red{
+                background: red;
+          }
+          .row{
+             display:flex;
+             flex-direction: row;
+             justify-content: space-around;
+             justify-content: space-evenly;        
+             margin:10px 0;
+          }
+          .box.one{
+              justify-content: center;
+              align-items: center;
+          }
+          .box.two{
+              justify-content: space-around;
+              align-items: center;            
+          }
+          .box.three{
+              flex-direction: column;
+              justify-content: space-around;                                                                           
+          }
+          .box.three .item:nth-child(1){
+              margin-left:10px;
+          }
+          .box.three .item:nth-child(2){
+              align-self:center;              
+          }
+          .box.three .item:nth-child(3){
+              align-self:flex-end;
+              margin-right:10px;
+          }
+          .box.four,.box.five,.box.six{
+              flex-direction:column;
+              justify-content: center;
+          }
+          .box.five .row{
+              margin: 0;
+          }
+          .box.six .row{
+              margin:5px 0;
+          }
+      </style>
+  </head>
+  <body>
+      
+    <div class="flex">
+        <div class="box one">
+            <div class="item red"></div>
+        </div>
+
+        <div class="box two">
+            <div class="item red"></div>
+            <div class="item"></div>
+        </div>
+
+        <div class="box three">
+            <div class="item red"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="box four">
+            <div class="row">
+                <div class="item red"></div>
+                <div class="item"></div>
+            </div>
+            <div class="row">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+
+        <div class="box five">
+            <div class="row">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="row">
+                <div class="item red"></div>
+            </div>
+            <div class="row">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+
+        <div class="box six">
+            <div class="row">
+                <div class="item"></div>
+                <div class="item"></div>                
+            </div>
+            <div class="row">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="row">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>        
+        </div>
+    </div>
+  </body>
+</html>
