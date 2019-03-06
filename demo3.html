@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            display: -moz-box;
+            display: -webkit-box;
+        }
+         .left-box,.right-box{
+             width: 200px;
+             
+            background:yellow;                
+         }   
+         .content-box{
+             -moz-box-flex: 1;
+             -webkit-box-flex: 1;
+             background: blue;
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">left
+            <div style="height:300px;"></div>
+        </div>
+        <div class="content-box">中间内容</div>
+        <div class="right-box">right</div>
+    </div>
+</body>
+</html>
