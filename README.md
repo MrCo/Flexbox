@@ -105,4 +105,9 @@ stretch（默认值）：轴线占满整个交叉轴。
 - align-self
 > align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
 
+### Flex实现田字布局
+> 外围盒子设置display:flex; flex-wrap:wrap;
+> 内部子项设置flex:1; flex-basis:50%; height:100px;
+> 如此即可，简单吧.
+
 [参考学习地址:http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
